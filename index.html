@@ -21,8 +21,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
-  <script type="module" crossorigin src="/week6/assets/index-bb80c005.js"></script>
-  <link rel="stylesheet" href="/week6/assets/index-42f146fe.css">
+  <script type="module" crossorigin src="/week6/assets/index-2947a4ed.js"></script>
+  <link rel="stylesheet" href="/week6/assets/index-50c5e380.css">
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         </div>
       </div>
     </nav>
-  </header>    <div class="container">
+  </header>    <div class="container bn-contain">
       <div class="banner d-sm-none" style="background: center / cover no-repeat url(/week6/assets/banner-sm-1a33f8cf.png);">
         <div class="banner-title">
           <h5>獻給新世代的生活風格誌</h5>
@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container hot-contain">
       <h2>熱門主題</h2>
       <div class="row ">
         <div class="col col-md-3">
@@ -243,8 +243,16 @@
             nextEl: ".swiper-button-next-new",
             prevEl: ".swiper-button-prev-new",
           },
-          slidesPerView: 2,
-          spaceBetween: 48,
+          breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            
+          },
+        },
+        spaceBetween: 48,
           pagination: {
             el: ".swiper-pagination",
             type: "fraction",
@@ -375,7 +383,7 @@
                   <li class="single-ellipsis">｜和寵物去露營 - 大自然之旅的雙倍...</li>
                 </ul>
                 <div class="img-box d-flex">
-                  <img class="img-fluid" src="/week6/assets/read-1-sm-01407a34.png" alt="">
+                  <img class="img-fluid" src="/week6/assets/hots-2-sm-e66a826f.png" alt="">
                 </div>
                 <div class="mybar d-flex justify-content-between">
                   <div>
@@ -492,7 +500,7 @@
         <div class="col-12 col-md-6 bbbbox">
           <div class="bbb">
             <h5>今天又不知道要去哪裡了嗎？</h5>
-            <h2>Vivre 給你意想不到的生活風格提案</h2>
+            <h2>Vivre <br class="d-md-none">給你意想不到的生活風格提案</h2>
             <a class="login" href="#">馬上訂閱<i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
@@ -535,7 +543,7 @@
                   <span><i class="bi bi-play-fill"></i>熱門文章</span>
                 </div>
                 <div class="babox">
-                  <span  class="single-ellipsis">適合溜小孩的海邊景點推薦</span><span><i class="bi bi-arrow-right"></i></span>
+                  <span class="single-ellipsis">適合溜小孩的海邊景點推薦</span><span><i class="bi bi-arrow-right"></i></span>
                 </div>
               </div>
             </div>
@@ -546,11 +554,24 @@
     <script>
       var mySwiper1 = new Swiper('.mySwiper2', {
         slidesPerView: 2,
-        grid: {
-          fill: 'column',
-          rows: 2,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            grid: {
+              fill: 'column',
+              rows: 1,
+            },
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            grid: {
+              fill: 'column',
+              rows: 2,
+            },
+          },
         },
-        spaceBetween: 24,
         loop: "infinite",
       });
 
