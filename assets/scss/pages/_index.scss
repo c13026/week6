@@ -128,12 +128,12 @@ h2 {
 	color: $pimary-400;
 	font-family: "Noto Serif TC";
 	font-weight: 700;
-	padding: 4px 8px
+	padding: 4px 8px;
 }
 
 .swiper-pagination {
 	width: auto;
-	bottom: 3rem
+	bottom: 3rem;
 }
 
 .swiper-btn {
@@ -143,27 +143,27 @@ h2 {
 	top: calc(100% - 16px);
 	padding: 4px 16px;
 	border-radius: 100px;
-	background: $whiteDF5;
-	transition: all .25s ease-in-out
+	background: $white;
+	transition: all .25s ease-in-out;
 }
 
 .swiper-btn:hover {
 	background: $accent-200;
 	color: $white;
-	border: 1px solid $accent-200
+	border: 1px solid $accent-200;
 }
 
 .bi {
 	position: relative;
-	bottom: 3px
+	bottom: 3px;
 }
 
 .swiper-button-prev-new {
-	left: 0
+	left: 0;
 }
 
 .swiper-button-next-new {
-	left: 16.666665%
+	left: 16.666665%;
 }
 
 .myhrr {
@@ -172,23 +172,23 @@ h2 {
 	top: calc(100% - 62px);
 	z-index: -1;
 	margin: 0 calc(50% + 16px) 0 52px;
-	display: none
+	display: none;
 }
 
 .mybg {
 	background: $pimary-200;
-	position: relative
+	position: relative;
 }
 
 .mon {
 	margin: 80px auto;
 	flex-direction: column;
 	align-items: center;
-	z-index: 10
+	z-index: 10;
 }
 
 .mon ul {
-	list-style-type: "\2714"
+	list-style-type: "\2714";
 }
 
 .bg1 {
@@ -211,22 +211,22 @@ h2 {
 .card.mybg1 {
 	background: $white;
 	border-radius: 12px;
-	padding: 56px
+	padding: 56px;
 }
 
 .card.mybg1 h3 {
 	color: $accent-200;
-	font-weight: 900
+	font-weight: 900;
 }
 
 .mySwiper1 ul {
 	list-style-type: none;
-	padding-left: 0
+	padding-left: 0;
 }
 
 .mySwiper1 ul li {
 	padding: 10px 0;
-	font-size: 16px
+	font-size: 16px;
 }
 
 .img-box {
@@ -313,18 +313,18 @@ h2 {
 .card.live {
 	border-radius: 0;
 	background-color: transparent;
-	border: unset
+	border: unset;
 }
 
 .card.live h3 {
 	font-size: 52px;
 	font-weight: 900;
 	color: $pimary-400;
-	margin: 36px 0
+	margin: 36px 0;
 }
 
 .card.live .card-body {
-	padding: 0
+	padding: 0;
 }
 
 .card.live .card-body:nth-child(3) {
@@ -332,16 +332,16 @@ h2 {
 	font-size: 20px;
 	line-height: 24px;
 	color: $gray-500;
-	font-weight: 900
+	font-weight: 900;
 }
 
 .card.live .card-foot {
 	display: flex;
-	justify-content: center
+	justify-content: center;
 }
 
 .card.live .img-fluid {
-	width: 100%
+	width: 100%;
 }
 
 .bbbbox {
@@ -349,7 +349,7 @@ h2 {
 	justify-content: center;
 	align-items: flex-start;
 	margin: auto;
-	padding: 18em 0
+	padding: 18em 0;
 }
 
 .bbaa {
@@ -357,17 +357,17 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	top: 28px
+	top: 28px;
 }
 
 .bbaa.rr {
 	position: relative;
-	top: -12px
+	top: -12px;
 }
 
 .bbaa .card {
 	width: 100%;
-	height: 290px
+	height: 290px;
 }
 
 .hot-tag {
@@ -413,7 +413,37 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 }
-
+@media (max-width: 991px){
+	.navbar-collapse{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content:space-evenly;
+		align-items: stretch;
+		text-align: center;
+		margin: 1rem 0 0;
+	}
+	.btn.mybtn {
+		line-height: 0;
+		position: absolute;
+		left: calc(100% - 60px);
+		padding: 6px 24px;
+	}
+	.btn.mybtn .material-symbols-outlined{
+		position: relative;
+		right: 1rem;
+	}
+	// .btn.mybtn 
+	.d-flex.me-auto{
+		margin-right: 0 !important;
+		margin-left: 0;
+		flex-direction: column;
+	}
+	.navbar-collaps .form-control{
+		margin-top: .5rem;
+		width: 100% !important;
+	}
+}
 @media (max-width: 767px) {
 	.container.myco {
 		margin: 48px auto 80px;
