@@ -1,4 +1,92 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-brand {
+  font-size: 28px;
+}
+
+.border-tran {
+  border: transparent;
+}
+
+.mylogo {
+  width: 96px;
+  display: inline-block;
+}
+
+header .form-control {
+  border: #DEE2E6 1px solid;
+  border-radius: 100px;
+}
+
+.btn.mybtn {
+  line-height: 0;
+  position: relative;
+  right: 48px;
+  color: #569573;
+  border-radius: .125rem 100px 100px 0.125rem;
+  display: flex;
+  align-items: center;
+}
+
+a.navbar-brand {
+  line-height: 0
+}
+
+.navbar {
+  border-bottom: 1px solid #ADB5BD;
+  padding: 36px 0;
+  margin: 0;
+}
+
+header.container {
+  margin: 0 auto
+}
+
+.container-fluid {
+  padding: 0
+}
+
+.login {
+  background: #569573;
+  color: #fff;
+  padding: 16px 24px;
+  text-decoration: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .25s ease-in-out
+}
+
+.login:hover {
+  background: #3b7154
+}
+
+.mylink {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 20px;
+  display: inline-block;
+  font-weight: 900
+}
+
+.nav-item {
+  padding: 0 10px
+}
+
+.header .container {
+  margin: 0
+}
+
+@media (max-width:1200px) and (min-width:991px) {
+  .login {
+    padding: 16px;
+    white-space: nowrap
+  }
+
+  .nav-item {
+    white-space: nowrap
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: 20px 12px
+  }
 }

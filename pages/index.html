@@ -5,12 +5,556 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div class="container bn-contain">
+      <div class="banner d-sm-none" style="background: center / cover no-repeat url(../assets/images/banner-sm.png);">
+        <div class="banner-title">
+          <h5>獻給新世代的生活風格誌</h5>
+          <h2>一起探索生活的無限可能</h2>
+          <button class="btn login d-flex"><span>馬上訂閱</span><span
+              class="material-symbols-outlined">arrow_forward</span></button>
+        </div>
+      </div>
+      <div class="banner d-none d-sm-block"
+        style="background: center / cover no-repeat url(../assets/images/banner.png);">
+        <div class="banner-title">
+          <h5>獻給新世代的生活風格誌</h5>
+          <h2>一起探索生活的無限可能</h2>
+          <button class="btn login d-flex"><span>馬上訂閱</span><span
+              class="material-symbols-outlined">arrow_forward</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="container hot-contain">
+      <h2>熱門主題</h2>
+      <div class="row ">
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-1.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-1-sm.png" alt="">
+            <h5>城市漫遊者</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-3.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-3-sm.png" alt="">
+            <h5>秘境尋蹤人</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-4.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-4-sm.png" alt="">
+            <h5>慢活生活行</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-8.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-8-sm.png" alt="">
+            <h5>美食探險記</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-2.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-2-sm.png" alt="">
+            <h5>美學建築誌</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-6.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-6-sm.png" alt="">
+            <h5>工藝匠心賞</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-5.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-5-sm.png" alt="">
+            <h5>品味設計家</h5>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card mycard">
+            <img class="d-none d-md-block" src="../assets/images/theme-7.png" alt="">
+            <img class="d-md-none" src="../assets/images/theme-7-sm.png" alt="">
+            <h5>時尚先鋒派</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container myco">
+      <div class="row d-md-none">
+        <div class="col">
+          <h2>精選文章</h2>
+        </div>
+      </div>
+      <div class="row mycol">
+        <div class="col-12 col-md-8 mySwiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head">
+                  <img class="img-fluid" src="../assets/images/articles-1.png" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="single-ellipsis">私人島嶼的露營奇遇記</h5>
+                  <p class="multiline-ellipsis">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                </div>
+                <div class="card-foot">
+                  <div class="rm"><span>Read More</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head">
+                  <img class="img-fluid" src="../assets/images/articles-2.png" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="single-ellipsis">窺探米其林三星主廚的絕密手藝</h5>
+                  <p class="multiline-ellipsis">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                </div>
+                <div class="card-foot">
+                  <div class=" rm"><span>Read More</span><span class="badge">會員專屬</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head">
+                  <img class="img-fluid" src="https://fakeimg.pl/400x200/?text=400x200" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="single-ellipsis">保證說出，我們建設怎麼，打電。</h5>
+                  <p class="multiline-ellipsis">
+                    告訴我公里免費版官員歡迎人員空間神話人體一顆授權，業績突破供求相應提供每次是以幾乎那位，比如和平島，上門我看應當影音眼裡重大起來不說推坑大魔王，將在一款健康食物類似站內我也如果您他不排行榜，地下著名簽名那天走出蔬菜凱文留言身影數碼基礎上高興，幫我主動，高。
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <div class="rm"><span>Read More</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head">
+                  <img class="img-fluid" src="https://fakeimg.pl/400x200/?text=400x200" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="single-ellipsis">商機令人承擔，激烈開放和你一。</h5>
+                  <p class="multiline-ellipsis">
+                    項目終於收入總體，差不多客戶重新內容簡介怪物及其信用維持股權，市場森林原文品種操作說了全新合適官員而言所有人執行環境，小子表示懂得評分幽默，轉讓歌詞慢慢維持本次加拿大還沒認為，實在明顯負責不限以往交友長期我也，則是一時資源專欄過程某種就好情人，搜尋科學表。
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <div class=" rm"><span>Read More</span><span class="badge">會員專屬</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head">
+                  <img class="img-fluid" src="https://fakeimg.pl/400x200/?text=400x200">
+                </div>
+                <div class="card-body">
+                  <h5 class="single-ellipsis">美好讀書雜誌產權，造成感到都。</h5>
+                  <p class="multiline-ellipsis">
+                    實踐能源日本地上飲食什麼所有人不可氣氛誘惑偉大多種傳奇一致，溫州植物好友是有配置不用，出生誘惑首次，怪物以為下來一會兒長期組成專利整合大約衣服更為傷心思想，限制考核操作系統總數鼓勵現金公主動作交通一。
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <div class=" rm"><span>Read More</span><span class="badge">會員專屬</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-4">
+          <h2 class="d-none d-lg-black">精選文章</h2>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev-new swiper-btn"><i class="bi bi-arrow-left"></i></div>
+          <hr class="myhrr">
+          <div class="swiper-button-next-new swiper-btn"><i class="bi bi-arrow-right"></i></div>
+        </div>
+      </div>
+      <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var mySwiper = new Swiper('.mySwiper', {
+          navigation: {
+            nextEl: ".swiper-button-next-new",
+            prevEl: ".swiper-button-prev-new",
+          },
+          breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            
+          },
+        },
+        spaceBetween: 48,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          loop: "infinite",
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+        });
+      </script>
+    </div>
+    <div class="container-fluid mybg d-flex">
+      <img class="bg1 d-none d-md-flex" src="../assets/images/bg-2.png" alt="">
+      <img class="bg1 d-md-none" src="../assets/images/bg-2-sm.png" alt="">
+      <img class="bg2 d-none d-md-flex" src="../assets/images/bg-1.png" alt="">
+      <div class="mon d-flex">
+        <h4>\ 母親節強檔活動 /</h4>
+        <h2>家庭訂閱方案限時 7 折</h2>
+        <ul>
+          <li>每月最新文章無限閱讀</li>
+          <li>專屬會員限定內容</li>
+          <li>定期電子報</li>
+          <li>年度精選禮物</li>
+          <li>24 /7 優先客戶服務</li>
+          <li>為每個成員量身打造專屬行程</li>
+        </ul>
+        <a class="login">我想了解</a>
+      </div>
+    </div>
+    <div class="container">
+      <h2>大家都在看</h2>
+      <div class="row mycol">
+        <div class="col-12 col-lg-9 mySwiper1 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card mybg1">
+                <h3>酒精路跑地圖</h3>
+                <ul>
+                  <li class="single-ellipsis">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                  <li class="single-ellipsis">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                  <li class="single-ellipsis">｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                </ul>
+                <div class="img-box d-flex">
+                  <img class=" d-md-none img-fluid" src="../assets/images/hots-1-sm.png" alt="">
+                  <img class="d-none d-md-block img-fluid" src="../assets/images/hots-1.png" alt="">
+                  <img class="d-none d-md-block img-fluid" src="../assets/images/hots-2.png" alt="">
+                  <img class="d-none d-md-block img-fluid" src="../assets/images/hots-3.png" alt="">
+                  <img class="d-none d-md-block img-fluid" src="../assets/images/hots-4.png" alt="">
+                </div>
+                <div class="mybar d-flex justify-content-between">
+                  <div>
+                    <span class="badge">#夜貓行程</span>　<span class="badge">#barhopping</span>　<span
+                      class="badge">#全台酒吧</span>
+                  </div>
+                  <div>
+                    <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mybg1">
+                <h3>台北拉麵圖鑑</h3>
+                <ul>
+                  <li class="single-ellipsis">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                  <li class="single-ellipsis">｜你要的調酒師在這裡！五月全台酒...</li>
+                  <li class="single-ellipsis">｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                </ul>
+                <div class="img-box">
+                  <img class="img-fluid" src="../assets/images/hots-3-sm.png" alt="">
+                </div>
+                <div class="mybar d-flex justify-content-between">
+                  <div>
+                    <span class="badge">#雞白湯</span>　<span class="badge">#拉麵</span>　<span class="badge">#台北美食</span>
+                  </div>
+                  <div>
+                    <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mybg1">
+                <h3>海島自由行</h3>
+                <ul>
+                  <li class="single-ellipsis">｜私島慢活島嶼生活 - 在熱帶天堂品...</li>
+                  <li class="single-ellipsis">｜海島漂流記 - 在陽光、沙灘和比基...</li>
+                  <li class="single-ellipsis">｜島嶼蹤跡 - 揭開加勒比海上世外桃...</li>
+                </ul>
+                <div class="img-box d-flex">
+                  <img class="img-fluid" src="../assets/images/hots-4-sm.png" alt="">
+                </div>
+                <div class="mybar d-flex justify-content-between">
+                  <div>
+                    <span class="badge">#熱帶國家</span>　<span class="badge">#海邊</span>　<span class="badge">#無敵海景</span>
+                  </div>
+                  <div>
+                    <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mybg1">
+                <h3>短天數出國推薦</h3>
+                <ul>
+                  <li class="single-ellipsis">｜72小時東京遊走 - 當個時尚東京通</li>
+                  <li class="single-ellipsis">｜48小時曼谷遊玩全攻略 </li>
+                  <li class="single-ellipsis">｜三天兩夜賞櫻微醺東京</li>
+                </ul>
+                <div class="img-box d-flex">
+                  <img class="img-fluid" src="../assets/images/hots-5-sm.png" alt="">
+                </div>
+                <div class="mybar d-flex justify-content-between">
+                  <div>
+                    <span class="badge">#說走就走</span>　<span class="badge">#出國玩</span>　<span class="badge">#東亞</span>
+                  </div>
+                  <div>
+                    <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mybg1">
+                <h3>週末露營趣</h3>
+                <ul>
+                  <li class="single-ellipsis">｜週末說走就走露營記</li>
+                  <li class="single-ellipsis">｜城市野營日記</li>
+                  <li class="single-ellipsis">｜和寵物去露營 - 大自然之旅的雙倍...</li>
+                </ul>
+                <div class="img-box d-flex">
+                  <img class="img-fluid" src="../assets/images/hots-2-sm.png" alt="">
+                </div>
+                <div class="mybar d-flex justify-content-between">
+                  <div>
+                    <span class="badge">#說走就走</span>　<span class="badge">#出國玩</span>　<span class="badge">#東亞</span>
+                  </div>
+                  <div>
+                    <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-flex col-3 mybg1">
+          <ul class="swiper-pagination-2">
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex col-12">
+          <div class="swiper-pagination swiperp2"></div>
+          <div class="swiper-button-prev-new1 swiper-btn"><i class="bi bi-arrow-left"></i></div>
+          <div class="swiper-button-next-new1 swiper-btn"><i class="bi bi-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var mySwiper1 = new Swiper('.mySwiper1', {
+        navigation: {
+          nextEl: ".swiper-button-next-new1",
+          prevEl: ".swiper-button-prev-new1",
+        },
+        slidesPerView: 1,
+        spaceBetween: 24,
+        pagination: {
+          el: '.swiper-pagination-2',
+          clickable: true,
+          renderBullet: function (index, className) {
+            switch (index) {
+              case 0: text = '．酒精路跑地圖'; break;
+              case 1: text = '．台北拉麵圖鑑'; break;
+              case 2: text = '．海島自由行'; break;
+              case 3: text = '．短天數出國推薦'; break;
+              case 4: text = '．週末露營趣'; break;
+            }
+            return '<li class="' + className + '">' + text + '</li>';
+          },
+        },
+        loop: "infinite",
+      });
+    </script>
+    <div class="container">
+      <h2>品味生活</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card live">
+            <div class="card-head">
+              <h3>食.</h3>
+            </div>
+            <div class="card-body">
+              <img class="d-none d-md-block img-fluid" src="../assets/images/life-1.png" alt="">
+              <img class="d-md-none img-fluid" src="../assets/images/life-1-sm.png" alt="">
+            </div>
+            <div class="card-body">
+              <p class="single-ellipsis">｜米其林三星主廚的那些絕活傳奇</p>
+              <p class="single-ellipsis">｜探秘成都的地道川味秘技與魅力</p>
+              <p class="single-ellipsis">｜義大利釀酒師對於酒的堅持執著</p>
+            </div>
+            <div class="card-foot">
+              <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card live">
+            <div class="card-head">
+              <h3>藝.</h3>
+            </div>
+            <div class="card-body">
+              <img class="d-none d-md-block img-fluid" src="../assets/images/life-2.png" alt="">
+              <img class="d-md-none img-fluid" src="../assets/images/life-2-sm.png" alt="">
+            </div>
+            <div class="card-body">
+              <p class="single-ellipsis">｜解構教主級時裝設計大師的獨特美學</p>
+              <p class="single-ellipsis">｜當代攝影師鏡頭中的光影離奇</p>
+              <p class="single-ellipsis">｜帶你穿縮中世紀，夏季文藝復興展</p>
+            </div>
+            <div class="card-foot">
+              <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card live">
+            <div class="card-head">
+              <h3>旅.</h3>
+            </div>
+            <div class="card-body">
+              <img class="d-none d-md-block img-fluid" src="../assets/images/life-3.png" alt="">
+              <img class="d-md-none img-fluid" src="../assets/images/life-3-sm.png" alt="">
+            </div>
+            <div class="card-body">
+              <p class="single-ellipsis">｜遠離喧囂,偶探巴塔哥尼亞終界</p>
+              <p class="single-ellipsis">｜東京深度六區,帶你細品極簡魅力</p>
+              <p class="single-ellipsis">｜專賣奇珍異寶的東歐地下夜市</p>
+            </div>
+            <div class="card-foot">
+              <span class="myspan">View More <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid style-contain">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 bbbbox">
+            <div class="bbb">
+              <h5>今天又不知道要去哪裡了嗎？</h5>
+              <h2>Vivre <br class="d-md-none">給你意想不到的生活風格提案</h2>
+              <a class="login" href="#">馬上訂閱<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mySwiper2 swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bbaa">
+                <div class="card d-flex"
+                  style="background: center / cover no-repeat url(../assets/images/projects-2.png);">
+                  <div class="hot-tag  bg-light text-dark">
+                    <span><i class="bi bi-play-fill"></i>人氣行程</span>
+                  </div>
+                  <div class="babox">
+                    <span class="single-ellipsis">親子露營要帶什麼？</span><span><i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bbaa">
+                <div class="card" style="background: center / cover no-repeat url(../assets/images/projects-5.png);">
+                  <div class="hot-tag bg-light text-dark">
+                    <span><i class="bi bi-play-fill"></i>編輯推薦</span>
+                  </div>
+                  <div class="babox">
+                    <span class="single-ellipsis">質感房間改造攻略！</span><span><i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bbaa rr">
+                <div class="card" style="background: center / cover no-repeat url(../assets/images/projects-1.png);">
+                  <div class="hot-tag  bg-light text-dark">
+                    <span><i class="bi bi-play-fill"></i>編輯推薦</span>
+                  </div>
+                  <div class="babox">
+                    <span class="single-ellipsis">山女孩的健行筆記</span><span><i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bbaa rr">
+                <div class="card" style="background: center / cover no-repeat url(../assets/images/projects-3.png);">
+                  <div class="hot-tag bg-light text-dark">
+                    <span><i class="bi bi-play-fill"></i>熱門文章</span>
+                  </div>
+                  <div class="babox">
+                    <span class="single-ellipsis">適合溜小孩的海邊景點推薦</span><span><i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var mySwiper1 = new Swiper('.mySwiper2', {
+        slidesPerView: 2,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            grid: {
+              fill: 'column',
+              rows: 1,
+            },
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            grid: {
+              fill: 'column',
+              rows: 2,
+            },
+          },
+        },
+        loop: "infinite",
+      });
+
+    </script>
+    <div class="container">
+      <div class="bbbbbox d-flex">
+        <div class="box-l">
+          <h2>想看什麼主題由你決定！</h2>
+        </div>
+        <div class="box-r d-flex">
+          <p class="share">歡迎投稿與我們分享</p>
+          <span class="login">聯絡我們</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 
     <%- include('./layout/footer'); -%>
 

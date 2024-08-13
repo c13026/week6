@@ -1,0 +1,123 @@
+
+
+.mini-container {
+    width: 33.125%;
+    margin: 100px auto;
+    padding: 40px;
+    border: 1px solid #E8E3DA;
+    background: #FFF;
+    border-radius: 12px;
+}
+.mini-container input{
+    border: 1px solid #F8F9FA;
+    border-radius: 8px;
+}
+.liginbtn{
+    padding: 12px 20px;
+    margin: 40px 0;
+    font-weight: 700;
+    letter-spacing:3px;
+    border: unset;
+    width: 100%;
+}
+.liginbtn:hover{
+    color: #FFF;
+}
+.bg-gray300 {
+    background: #F8F9FA;
+}
+.bg-accent200{
+    background: #569573;
+}
+.othor{
+    border-top: 1px solid #DEE2E6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.form-control.myinput{
+    padding: 12px 24px;
+}
+.myinput::placeholder{
+    letter-spacing:2px;
+}
+.othor span{
+    color: #ADB5BD;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    top: -12px;
+    background: #FFF;
+    padding: 0 12px;
+   
+}
+
+.mybtnn{
+    margin: 4px 0;
+    border-radius: 100px;
+    background: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    color: #52525B;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 100%;
+}
+.mybtnn img{
+    padding: 0 8px;
+}
+label{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.boxgo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space:nowrap;
+}
+.boxgo a{
+    color: #569573;
+    text-decoration: none;
+}
+@media (max-width:1200px){
+    
+    .mini-container {
+        width: 50%;
+    }
+}
+@media (max-width:767px) {
+    .mini-container {
+        width: 70%;
+        min-width: 516px;
+        margin: 60px auto;
+        padding: 24px;
+        border-radius: 0;
+    }
+    .boxgo{
+        margin: 24px;
+    }
+    .liginbtn{
+        padding: 12px 20px;
+        margin: 24px 0;
+        
+    }
+}
+@media (max-width:576px) {
+    .mini-container {
+        width: 100%;
+        margin: 60px auto;
+        padding: 24px;
+        border-radius: 0;
+        min-width:unset;
+    }
+}
