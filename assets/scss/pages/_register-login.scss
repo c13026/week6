@@ -4,12 +4,12 @@
     width: 33.125%;
     margin: 100px auto;
     padding: 40px;
-    border: 1px solid #E8E3DA;
-    background: #FFF;
+    border: 1px solid $pimary-300;
+    background: $white;
     border-radius: 12px;
 }
 .mini-container input{
-    border: 1px solid #F8F9FA;
+    border: 1px solid $gray-100;
     border-radius: 8px;
 }
 .liginbtn{
@@ -21,16 +21,16 @@
     width: 100%;
 }
 .liginbtn:hover{
-    color: #FFF;
+    color: $white;
 }
 .bg-gray300 {
-    background: #F8F9FA;
+    background: $gray-100;
 }
 .bg-accent200{
-    background: #569573;
+    background: $accent-200;
 }
 .othor{
-    border-top: 1px solid #DEE2E6;
+    border-top: 1px solid $gray-200;
     position: relative;
     display: flex;
     justify-content: center;
@@ -43,13 +43,13 @@
     letter-spacing:2px;
 }
 .othor span{
-    color: #ADB5BD;
+    color: $gray-300;
     text-align: center;
     font-size: 16px;
     line-height: 24px;
     position: absolute;
     top: -12px;
-    background: #FFF;
+    background: $white;
     padding: 0 12px;
    
 }
@@ -57,13 +57,13 @@
 .mybtnn{
     margin: 4px 0;
     border-radius: 100px;
-    background: #F8F9FA;
-    border: 1px solid #F8F9FA;
+    background: $gray-100;
+    border: 1px solid $gray-100;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
-    color: #52525B;
+    color: $gray-500;
     font-weight: 700;
     letter-spacing: 3px;
     width: 100%;
@@ -86,7 +86,7 @@ label{
     white-space:nowrap;
 }
 .boxgo a{
-    color: #569573;
+    color: $accent-200;
     text-decoration: none;
 }
 @media (max-width:1200px){
