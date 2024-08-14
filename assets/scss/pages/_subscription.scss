@@ -1,0 +1,166 @@
+.breadcrumb-item a{
+    text-decoration: none;
+    color: $gray-400;
+}
+.breadcrumb-item.active{
+    color: $accent-200;
+}
+.mmyh2{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 10%;
+    color: $gray-500;
+}
+.Annual-monthlyfee{
+    margin: 0 auto;
+}
+#plan label,
+#radio label{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+}
+#plan input[type="radio"],
+#radio input[type="radio"] {
+    display: none; 
+}
+#radio input:checked + .btn-primary,
+.btn-primary.active {
+    background: $accent-200; 
+    color: $white;
+}
+#radio .btn-primary {
+    display: inline-block;
+    border: transparent;
+    background: transparent; 
+    color: $gray-400; 
+    cursor: pointer; 
+    border-radius: 0;
+    font-weight: 700;
+}
+#radio .btn-primary:hover{
+    color: $gray-600;
+    background:$accent-100;
+    
+}
+#plan{
+    display: flex;
+    align-items: stretch;
+    margin: 40px 0;
+}
+#plan .card{
+    border:$pimary-300 1px solid;
+}
+#plan .card:hover{
+    border: $accent-200 2px solid;
+    background: $white;
+}
+#plan .card:hover .card-foot .login.d-flex{
+    background: $accent-200;
+    color: $white;
+}
+#plan .card:hover h5{
+    color: $pimary-400;
+}
+#plan .card:hover svg path{
+    fill:$accent-200;
+}
+#plan .card:hover ul li{
+    color: $gray-500;
+}
+#plan .card:hover svg.minissvg{
+    fill:$gray-300;
+}
+#plan .card svg path{
+    fill:$gray-400;
+
+}
+#plan .card{
+    width: 100%;
+    height: 100%;
+}
+#plan .card{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.cost{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#plan .cost h5,
+#plan .cost h4,
+#plan .cost p{
+    font-family: "Noto Serif TC";
+    text-align: center;
+    font-weight: 900;
+}
+#plan .cost p{
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+#plan .cost h5{
+    color: $gray-400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+
+}
+#plan .cost h4{
+    display: flex;
+    align-items: flex-end;
+}
+
+#plan .cost h4>span{
+    font-size: 24px;
+    line-height: 30px;
+    flex-direction: row;
+    padding-left: 8px;
+    white-space:nowrap;
+    color: $gray-300;
+}
+#plan .card svg.minisvg path{
+    fill:$gray-300;
+}
+#plan .card-foot .login.d-flex{
+    margin-top: auto;
+    margin-bottom: 0;
+    width: 100%;
+    border: unset;
+    align-items: center;
+    justify-content: center;
+    background: $gray-100;
+    color: $gray-400;
+}
+#plan .card-head{
+    margin-bottom: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#plan .card-body{
+    padding: 0 0 60px;
+}
+#plan ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#plan ul li{
+    display: flex;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin:  12px 0;
+    color: $gray-400;
+}
+#plan ul li i.bi{
+    width: 24px;
+    margin-right: 8px;
+}
