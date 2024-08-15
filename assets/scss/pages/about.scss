@@ -60,7 +60,10 @@
     align-items: flex-start;
     margin-bottom: 80px;
 }
-.era span{
+.era:last-child{
+    margin-bottom: 0;
+}
+.era>span{
     background: $pimary-400;
     color: $gray-100;
     padding: 12px;
@@ -69,7 +72,6 @@
 }
 .month{
     display: flex;
-    // margin-right: 72px;
 }
 .month h6{
     white-space:nowrap;
@@ -104,15 +106,33 @@
 .mini-container.vision p{
     color: $gray-400;
 }
+
 @media (max-width:767px) {
+    .month h6{
+        font-size: 16px;
+        line-height: 24px;
+        width: 45px;
+    }
+    .month p{
+        padding-left: .5rem;
+    }
+    .container.banner {
+        margin: 0 auto 40px;
+    }
+    .container-fluid.history .container{
+        margin: 0 auto;
+    }
     .contain{
-        margin: 40px auto;
+        margin: 40px auto 0;
+    }
+    .container.about{
+        margin: 0 auto;
     }
     .reverse{
         flex-direction: column;
     }
     .contain .row{
-        margin: 0 -12px 24px;
+        margin: 0 -12px;
     }
     .contain .col-12:nth-child(2) {
         padding:24px;
@@ -128,19 +148,19 @@
         text-align: center;
     }
     .era>span{
+        font-size: 16px;
+        padding: 12px;
         margin-bottom: 24px;
     }
     .era{
         flex-direction: column;
-    }
-    .era:last-child{
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
     .month h6{
         margin-left: 0;
     }
     .history .row {
-        padding: 80px 12px;
+        padding: 40px 12px;
     }
 
     .mini-container.vision{
