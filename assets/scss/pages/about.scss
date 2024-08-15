@@ -133,6 +133,9 @@
     .era{
         flex-direction: column;
     }
+    .era:last-child{
+        margin-bottom: 0;
+    }
     .month h6{
         margin-left: 0;
     }
