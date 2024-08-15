@@ -1,7 +1,16 @@
 .navbar-brand {
   font-size: 28px;
 }
-
+header{
+  position: sticky;
+  top: 0;
+  left: auto;
+  right: auto;
+  z-index: 100000;
+  background: #FFFDF5DD;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
 .border-tran {
   border: transparent;
 }
@@ -36,7 +45,9 @@ a.navbar-brand {
   padding: 36px 0;
   margin: 0;
 }
-
+.navbar-nav{
+  align-items: center;
+}       
 header.container {
   margin: 0 auto
 }
@@ -52,7 +63,7 @@ header.container {
   text-decoration: none;
   border-radius: 100px;
   cursor: pointer;
-  transition: all .25s ease-in-out
+  transition: all .25s ease-in-out;
 }
 
 .login:hover {
@@ -64,28 +75,48 @@ header.container {
   color: inherit;
   padding: 8px 20px;
   display: inline-block;
-  font-weight: 900
+  font-weight: 900;
 }
-
+.navbar-nav{
+  height: 100%;
+}
 .nav-item {
-  padding: 0 10px
+  padding: 0 10px;
 }
 
 .header .container {
-  margin: 0
+  margin: 0;
 }
 
 @media (max-width:1200px) and (min-width:991px) {
   .login {
     padding: 16px;
-    white-space: nowrap
+    white-space: nowrap;
   }
 
   .nav-item {
-    white-space: nowrap
+    white-space: nowrap;
   }
 }
-
+@media (max-width:991px) {
+  .navbar-collapse.navbar-collapse{
+    height: calc(100vh);
+    overflow-y: hidden;
+  }
+  .nav-item{
+    width: 100%;
+    padding: 0;
+    overflow-y: hidden;
+    // height: calc( 20vh - 1rem);
+  }
+  .mylink.mylink{
+    width: 100%;
+  }
+  .navbar-nav .login{
+    width: 100%;
+    display: inline-block;
+  }
+}
 @media (max-width: 575px) {
   .navbar {
     padding: 20px 12px

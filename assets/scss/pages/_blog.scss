@@ -1,0 +1,100 @@
+.container.blog-bn{
+    margin: 0 auto 80px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.article .row{
+    display: flex;
+    justify-content: center;
+}
+.blog-bn .bl-banner{
+    width: 100%;
+    margin: 0;
+    height: 454px;
+}
+.article h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: $gray-500;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.article h6{
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray-300;
+}
+.article p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: $gray-500;
+}
+.article .img-fluid{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.article .badge{
+    margin-right: .5rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 4px 8px;
+
+}
+.showthey{
+    text-align: center;
+    position: relative;
+}
+.showthey p{
+    margin-bottom: 1rem;
+}
+.showthey .liginbtn{
+    width: auto;
+    margin: 0;
+}
+.shadow1{
+    background:linear-gradient(180deg, transparent 0%, $pimary-100 85%); 
+    box-shadow: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 600px;
+    width: 100%;
+    z-index: 1000;
+}
+.further .row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.further h5{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: $gray-500;
+
+}
+ p{
+    color: $gray-400;
+}
+.further span{
+    text-align: right;
+    color: $accent-200;
+    display: flex;
+    justify-content: flex-end;
+}
+.further .img-fluid{
+    width: 100%;
+}
+.mySwiper3{
+    height: 500px;
+}
+@media (max-width:767px) {
+    .blog-bn .bl-banner{
+        height: 240px;
+    }
+}
