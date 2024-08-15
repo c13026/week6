@@ -48,6 +48,62 @@
 .contain .img-fluid{
     width: 100%;
 }
+.history{
+    background: $pimary-200;
+
+}
+.history .row{
+    padding: 80px 24px;
+}
+.era{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+.era span{
+    background: $pimary-400;
+    color: $gray-100;
+    padding: 12px;
+    font-size: 24px;
+    font-family: "Newsreader" ;
+}
+.month{
+    display: flex;
+    // margin-right: 72px;
+}
+.month h6{
+    white-space:nowrap;
+    font-family:"Newsreader","Noto Serif TC" ;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: $gray-400;
+    margin-left: 72px;
+    width: 64px;
+}
+.month h6>span{
+    font-size: 16px ;
+    line-height: 20px;
+    padding: 0;
+    color: $gray-400;
+    background: transparent;
+}
+.month p{
+    color: $gray-600;
+    padding-left: 1rem;
+    border-left: 1px solid $gray-300;
+}
+.mini-container.vision{
+    border: unset;
+    background: transparent;
+    padding: 0;
+}
+.mini-container.vision h2{
+    text-align: center;
+}
+.mini-container.vision p{
+    color: $gray-400;
+}
 @media (max-width:767px) {
     .contain{
         margin: 40px auto;
@@ -67,5 +123,24 @@
     }
     .contain .col-lg-6 .img-fluid{
         border-radius: 0;
+    }
+    .col-12.col-lg-4 h2{
+        text-align: center;
+    }
+    .era>span{
+        margin-bottom: 24px;
+    }
+    .era{
+        flex-direction: column;
+    }
+    .month h6{
+        margin-left: 0;
+    }
+    .history .row {
+        padding: 80px 12px;
+    }
+
+    .mini-container.vision{
+        padding: 0 24px;
     }
 }
