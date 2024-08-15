@@ -94,7 +94,28 @@
     height: 500px;
 }
 @media (max-width:767px) {
+    .container.blog-bn{
+        margin: 0 auto 40px;
+    }
+    .article h1{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
     .blog-bn .bl-banner{
         height: 240px;
+    }
+    .article p{
+        margin-bottom: 24px;
+    }
+    .article .img-fluid{
+        margin-bottom: 24px;
+    }
+    .breadcrumb{
+        font-size: 14px;
+    }
+    .article h6{
+        margin-bottom: 28px;
     }
 }
