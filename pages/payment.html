@@ -36,22 +36,99 @@
                 </ol>
             </nav>
             <h2 class="mmyh2">付款</h2>
-           <div class="row">
-            <div class="col-7">
-                <div class="card">
+            <div class="row">
+                <div class="col-12 col-lg-7 pay">
+                    <div class="card">
+                        <h4>購買人</h4>
+                        <div>
+                            <label for="name">姓名</label>
+                            <input type="text" class="form-control bg-gray300 myinput" name="name" id="name"
+                                placeholder="請輸入姓名">
+                            <label for="pw">密碼</label>
+                            <input type="password" class="form-control bg-gray300 myinput" name="pw" id="pw"
+                                placeholder="請輸入密碼">
+                            <label for="em">電子信箱</label>
+                            <input type="email" class="form-control bg-gray300 myinput" name="em" id="em"
+                                placeholder="請輸入電子郵件">
+                        </div>
+                        <div class="d-flex mypaycard">
+                            <input class="form-check-input" type="checkbox" name="myinformation" id="information">
+                            <label class="form-check-label" for="information">記住我的資料</label>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>付款方式</h4>
+                        <p>Pay With</p>
+                        <div class="mypay">
+                            <input class="form-check-input" type="radio" name="pay" id="pay" checked>
+                            <label class="form-check-label" for="pay">信用卡</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="myvisa">信用卡號碼</label>
+                            <input type="text" class="form-control bg-gray300 myinput" id="myvisa" placeholder="1234 5678 1234 5678">
+                            <div class="paybox">
+                                <div>
+                                    <label for="mymy">過期日</label>
+                                    <input type="text" class="form-control bg-gray300 myinput" id="mymy" placeholder="MM/YY">
+                                </div>
+                                <div>
+                                    <label for="myccv">驗證碼</label>
+                                    <input type="text" class="form-control bg-gray300 myinput" id="myccv" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="d-flex mypaycard">
+                                <input class="form-check-input" type="checkbox" name="mypaycard" id="mypaycard">
+                                <label class="form-check-label" for="mypaycard">記住卡片資訊</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card list">
+                        <div class="card-head">
+                            <h4>訂單資訊</h4>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h5>輕量型方案</h5>
+                                <span>年繳</span>
+                            </div>
+                            <div>
+                                <h5>NT 1,188</h5>
+                            </div>
+                        </div>
+                        <div class="card-body discount">
+                            <label class="h6" for="">折扣碼</label>
+                            <div>
+                                <input type="text" class="form-control bg-gray300 myinput" name="" id=""
+                                    placeholder="請輸入折扣碼">
+                                <button class="btn myinput bg-gray300">套用</button>
+                            </div>
+                        </div>
+                        <div class="card-body subtotal">
+                            <div>
+                                <h6>小計</h6>
+                                <h6>折扣</h6>
+                            </div>
+                            <div>
+                                <div class="h6">NT 1,188</div>
+                                <div class="h6">0</div>
+                            </div>
+                        </div>
+                        <div class="card-foot">
+                            <div class="mycardfoot">
+                                <div>
+                                    <h6>總計</h6>
+                                </div>
+                                <div><span>NT 1,188</span></div>
+                            </div>
+                            <button class="login liginbtn" type="submit">立即付款 <i class="bi bi-arrow-right"></i></button>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="card list">
-                    <div class="card-head"></div>
-                    <div class="card-body"></div>
-                    <div class="card-body"></div>
-                    <div class="card-body"></div>
-                    <div class="card-foot"></div>
-                </div>
-            </div>
-           </div>
         </div>
 
 

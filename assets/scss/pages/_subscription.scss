@@ -74,6 +74,9 @@
 #plan .card:hover svg.minissvg{
     fill:$gray-300;
 }
+#plan .card:hover h4>span{
+    color: $gray-300;
+}
 #plan .card svg path{
     fill:$gray-400;
 
@@ -123,7 +126,7 @@
     flex-direction: row;
     padding-left: 8px;
     white-space:nowrap;
-    color: $gray-300;
+    color: $gray-400;
 }
 #plan .card svg.minisvg path{
     fill:$gray-300;
