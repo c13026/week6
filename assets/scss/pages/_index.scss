@@ -40,7 +40,7 @@ h2 {
 	font-weight: 900;
 	font-size: 32px;
 	line-height: 38px;
-	margin-bottom: 24px
+	margin-bottom: 24px;
 }
 
 .mycard {
@@ -120,7 +120,7 @@ h2 {
 	line-height: 24px;
 	color: $accent-200;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .badge {
@@ -308,6 +308,7 @@ h2 {
 	-webkit-line-clamp: 4;
 	line-clamp: 4;
 	overflow: hidden;
+	
 }
 
 .card.live {
@@ -338,6 +339,9 @@ h2 {
 .card.live .card-foot {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
 }
 
 .card.live .img-fluid {
